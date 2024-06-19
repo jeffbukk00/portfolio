@@ -7,7 +7,7 @@ const NotFoundPage = () => {
   useEffect(() => {
     navigate("/main/about-me");
   }, [navigate]);
-  return;
+  return <></>;
 };
 
 export default NotFoundPage;
