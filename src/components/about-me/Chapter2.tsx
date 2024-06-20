@@ -5,9 +5,9 @@ import useScroll from "../useScroll";
 const Chapter2 = () => {
   const { scroll, scrollRef } = useScroll();
   const paragraphClasses =
-    "text-sm indent-3 tracking-wide leading-6 text-gray-700";
+    "sm:text-sm text-xs indent-3 tracking-wide leading-6 text-gray-700";
   return (
-    <div className="w-[35%] h-[75%] border border-gray-300">
+    <>
       <div className="w-full h-[13%] flex items-center gap-2 border-b-[1px] border-gray-300 relative">
         <span className="ml-4 w-10 h-10 rounded-full border border-gray-300 flex justify-center items-center">
           <Book classes="w-5 h-5 inline-block stroke-1 stroke-main" />
@@ -29,10 +29,10 @@ const Chapter2 = () => {
         </p>
         <div className="border border-gray-500 p-3">
           <div className="flex flex-col items-center mb-6">
-            <p className="font-medium text-default mb-2">
+            <p className="font-medium text-default mb-2 sm:text-base text-sm">
               지금 현재, 개발이 정말 재미있습니다.
             </p>
-            <p className="font-light text-gray-500">
+            <p className="font-light text-gray-500 sm:text-base text-sm">
               개발을 더 잘하기 위한 학습도 물론 재미있습니다.
             </p>
           </div>
@@ -40,10 +40,10 @@ const Chapter2 = () => {
             <span className="w-2 h-2 bg-main rounded-full"></span>
           </div>
           <div className="flex flex-col items-center mt-6">
-            <p className="text-sm font-light text-gray-500 mb-1">
+            <p className="sm:text-sm text-xs font-light text-gray-500 mb-1">
               유저 한 명을 확보하는 것이 얼마나 어려운지도 새삼 느끼게 됩니다.
             </p>
-            <p className="text-sm font-medium text-default">
+            <p className="sm:text-sm text-xs font-medium text-default">
               그만큼, 그 한 명이 얼마나 소중한지도 동시에 느낍니다.
             </p>
           </div>
@@ -65,7 +65,7 @@ const Chapter2 = () => {
           <img src={devops} />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

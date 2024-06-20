@@ -27,7 +27,7 @@ const PageChangeButton = ({
       }}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      className={`border w-[70%] h-16 flex justify-between items-center rounded-full px-6 ${
+      className={`border w-[70%] lg:h-16 h-14 flex justify-between items-center rounded-full px-6 ${
         isSelectedBoolean ? "border-main border-2" : "border-gray-300"
       } ${!isSelectedBoolean ? "duration-500 transition-colors" : ""}
        ${
@@ -44,20 +44,20 @@ const PageChangeButton = ({
          !isSelectedBoolean && isHovered
            ? "text-main font-bold"
            : "text-default font-medium"
-       }`}
+       } lg:text-base text-sm`}
       >
         {page}
       </span>
       <span>
         <DoubleArrowRight
-          classes={`w-7 h-7 inline-block stroke-1 ${
+          classes={`lg:w-7 lg:h-7 w-6 h-6 inline-block stroke-1 ${
             isSelectedBoolean ? "stroke-main stroke-2" : "stroke-default"
           } ${!isSelectedBoolean ? "duration-500 transition-colors" : ""}
        ${
          !isSelectedBoolean && isHovered
            ? "stroke-main animate-bounceR stroke-2"
            : "stroke-default"
-       }`}
+       } `}
         />
       </span>
     </button>

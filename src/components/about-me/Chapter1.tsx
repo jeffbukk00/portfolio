@@ -13,10 +13,10 @@ import useScroll from "../useScroll";
 const Chapter1 = () => {
   const { scrollRef, scroll } = useScroll();
   const paragraphClasses =
-    "text-sm indent-3 tracking-wide leading-6 text-gray-700";
+    "sm:text-sm text-xs indent-3 tracking-wide leading-6 text-gray-700";
   return (
-    <div className="w-[35%] h-[75%] border border-gray-300">
-      <div className="w-full h-[13%] flex items-center gap-2 border-b-[1px] border-gray-300 relative">
+    <>
+      <div className="w-full h-[10vh] flex items-center gap-2 border-b-[1px] border-gray-300 relative">
         <span className="ml-4 w-10 h-10 rounded-full border border-gray-300 flex justify-center items-center">
           <Book classes="w-5 h-5 inline-block stroke-1 stroke-main" />
         </span>
@@ -27,7 +27,7 @@ const Chapter1 = () => {
         ></div>
       </div>
       <div
-        className="w-full h-[87%] overflow-y-scroll p-6 flex flex-col gap-8"
+        className="w-full h-[65vh] overflow-y-scroll p-6 flex flex-col gap-8"
         onScroll={scroll}
       >
         <p className={paragraphClasses}>
@@ -106,7 +106,7 @@ const Chapter1 = () => {
           덕분에 새로운 길에 자신 있게 나설 수 있었습니다.
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

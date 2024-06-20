@@ -12,12 +12,12 @@ const AboutMeButton = ({ title, path }: { title: string; path: string }) => {
     >
       <button
         onClick={() => navigate(path)}
-        className={`border rounded-full px-9 py-[0.85rem] flex justify-between items-center gap-6 duration-500 transition-colors ${
+        className={` border rounded-full sm:px-9 px-5 py-[0.85rem] flex justify-between items-center gap-6 duration-500 transition-colors ${
           isHovered ? "border-main" : "border-gray-300"
         }`}
       >
         <span
-          className={`font-medium text-base duration-500 transition-colors ${
+          className={`font-medium sm:text-base text-xs duration-500 transition-colors ${
             isHovered ? "text-main" : "text-default"
           }`}
         >

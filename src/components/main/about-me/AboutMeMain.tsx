@@ -13,11 +13,11 @@ const AboutMeMain = () => {
         </div>
       </div>
       <div className="mb-4">
-        <p className="text-sm text-gray-300 tracking-wider">
+        <p className="sm:text-sm text-xs text-gray-300 tracking-wider">
           아래는 저에 대한 이야기들입니다. 읽으시려면 클릭해주세요.
         </p>
       </div>
-      <div className="border border-gray-300 px-12 py-8 flex flex-col gap-8 items-center">
+      <div className="border border-gray-300 sm:px-12 px-6 py-8 flex flex-col gap-8 items-center sm:mx-0 mx-4">
         <AboutMeButton
           title="개발자에 도전하기까지의 이야기"
           path="/about-me/chap1"

@@ -16,7 +16,7 @@ const AppLink = ({
     <a
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      className={`w-[70%] flex justify-center items-center gap-4  rounded-full py-3 duration-500 transition-colors border ${
+      className={`sm:w-[70%] w-[90%] flex justify-center items-center gap-4  rounded-full py-3 duration-500 transition-colors border ${
         isHovered ? "border-main" : "border-grey-300"
       }`}
       href={url}
@@ -29,22 +29,22 @@ const AppLink = ({
       >
         {isGit ? (
           <GithubLogo
-            classes={`w-6 h-6 stoke-1 duration-500 transition-colors ${
+            classes={`sm:w-6 sm:h-6 w-4 h-4 stoke-1 duration-500 transition-colors ${
               isHovered ? "stroke-main" : "stroke-default"
             }`}
           />
         ) : (
           <LinkVector
-            classes={`w-6 h-6 stoke-1 duration-500 transition-colors ${
+            classes={`sm:w-6 sm:h-6 w-4 h-4 stoke-1 duration-500 transition-colors ${
               isHovered ? "stroke-main" : "stroke-default"
             }`}
           />
         )}
       </span>
       <span
-        className={`tracking-wider  duration-500 transition-colors font-medium text-sm ${
+        className={`tracking-wider  duration-500 transition-colors font-medium  ${
           isHovered ? "text-main" : "text-default"
-        }`}
+        } sm:text-sm text-xs`}
       >
         {title}
       </span>

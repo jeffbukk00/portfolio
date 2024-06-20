@@ -10,6 +10,8 @@ import Chapter2Page from "./pages/about-me/Chapter2Page";
 import ProjectCounterPage from "./pages/project/ProjectCounterPage";
 import Project3WordsPage from "./pages/project/Project3WordsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import AboutMeRootPage from "./pages/about-me/AboutMeRootPage";
+import ProjectRootPage from "./pages/project/ProjectRootPage";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about-me",
+        element: <AboutMeRootPage />,
         children: [
           { path: "/about-me/chap1", element: <Chapter1Page /> },
           { path: "/about-me/chap2", element: <Chapter2Page /> },
@@ -36,6 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/project",
+        element: <ProjectRootPage />,
         children: [
           { path: "/project/counter", element: <ProjectCounterPage /> },
           { path: "/project/3words", element: <Project3WordsPage /> },

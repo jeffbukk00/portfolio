@@ -15,11 +15,11 @@ const Threewords = () => {
   const { scrollRef, scroll } = useScroll();
 
   const paragraphClasses =
-    "text-sm indent-3 tracking-wide leading-6 text-gray-700";
+    "sm:text-sm text-xs indent-3 tracking-wide leading-6 text-gray-700";
 
   return (
-    <div className="w-[60%] h-[80%]  border border-gray-300">
-      <div className="w-full h-[13%] flex items-center gap-2 border-b-[1px] border-gray-300 relative">
+    <>
+      <div className="w-full h-[10vh] flex items-center gap-2 border-b-[1px] border-gray-300 relative">
         <span className="ml-4 w-10 h-10 rounded-full border border-gray-300 flex justify-center items-center">
           <Book classes="w-5 h-5 inline-block stroke-1 stroke-main" />
         </span>
@@ -35,32 +35,32 @@ const Threewords = () => {
         ></div>
       </div>
       <div
-        className="w-full h-[87%] overflow-y-scroll p-6 flex flex-col gap-5"
+        className="w-full h-[70vh] overflow-y-scroll p-6 flex flex-col gap-5"
         onScroll={scroll}
       >
-        <div className="w-full grid grid-cols-2 mt-8">
+        <div className="w-full grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 mt-8">
           <div className="w-full h-full flex justify-center items-center">
-            <ThreeWordsVector classes="w-full h-[50%]" />
+            <ThreeWordsVector classes="md:w-full semiSm:W-[70%] sm:w-[80%] w-[100%] h-[50%]" />
           </div>
           <div className="w-full h-full flex justify-center items-center">
             <div className="w-[80%] border border-gray-300 h-40 flex flex-col justify-center gap-4 px-6">
               <p>
-                <span className="text-sm text-gray-300 font-medium mr-2">
+                <span className="sm:text-sm text-xs text-gray-300 font-medium mr-2">
                   어플리케이션 이름
                 </span>
-                <span className="text-sm font-medium">3words</span>
+                <span className="sm:text-sm text-xs font-medium">3words</span>
               </p>
               <p>
-                <span className="text-sm text-gray-300 font-medium mr-2">
+                <span className="sm:text-sm text-xs text-gray-300 font-medium mr-2">
                   개발 인원
                 </span>
-                <span className="text-sm font-medium">1명</span>
+                <span className="sm:text-sm text-xs font-medium">1명</span>
               </p>
               <p>
-                <span className="text-sm text-gray-300 font-medium mr-2">
+                <span className="sm:text-sm text-xs text-gray-300 font-medium mr-2">
                   개발 기간
                 </span>
-                <span className="text-sm font-medium   tracking-wide">
+                <span className="sm:text-sm text-[9px] font-medium   tracking-wide">
                   24.01.08.월 ~ 24.01.19.금
                 </span>
               </p>
@@ -68,7 +68,7 @@ const Threewords = () => {
           </div>
         </div>
         <div className="w-full flex justify-center items-center">
-          <div className="w-[50%] flex flex-col justify-center items-center mt-8 mb-8 border border-gray-300 px-4 py-8 gap-4">
+          <div className="semiSm:w-[50%] sm:w-[70%] w-[80%] flex flex-col justify-center items-center mt-8 mb-8 border border-gray-300 px-4 py-8 gap-4">
             <AppLink url="https://www.3words.today" title="서비스 링크" />
             <AppLink
               url="https://github.com/jeffbukk00/3words"
@@ -114,7 +114,7 @@ const Threewords = () => {
             </span>
           </SkillStack>
         </div>
-        <div className="w-full border border-gray-300 flex flex-col  gap-8 py-8 px-16 mt-8">
+        <div className="w-full border border-gray-300 flex flex-col  gap-8 py-8 sm:px-16 px-8 mt-8">
           <div className="w-full flex justify-center items-center">
             <div className="border border-gray-300 text-lg font-medium py-3 px-6 rounded-full">
               기획 경험
@@ -145,7 +145,7 @@ const Threewords = () => {
             어플리케이션으로 구현해보고자 마음 먹었습니다.
           </p>
         </div>
-        <div className="w-full border border-gray-300 flex flex-col  gap-8 py-8 px-16 mt-8">
+        <div className="w-full border border-gray-300 flex flex-col  gap-8 py-8 sm:px-16 px-8 mt-8">
           <div className="w-full flex justify-center items-center">
             <div className="border border-gray-300 text-lg font-medium py-3 px-6 rounded-full">
               개발 경험
@@ -189,7 +189,7 @@ const Threewords = () => {
             구현했으나, 또다른 문제를 만나게되었고, 현재는 미완성 상태입니다.
           </p>
         </div>
-        <div className="w-full border border-gray-300 flex flex-col  gap-8 py-8 px-16 mt-8">
+        <div className="w-full border border-gray-300 flex flex-col  gap-8 py-8 sm:px-16 px-8 mt-8">
           <div className="w-full flex justify-center items-center">
             <div className="border border-gray-300 text-lg font-medium py-3 px-6 rounded-full">
               배포 경험
@@ -213,7 +213,7 @@ const Threewords = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

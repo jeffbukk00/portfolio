@@ -10,8 +10,15 @@ const RootPage = () => {
       navigate("/main/about-me");
     }
   }, [navigate, location.pathname]);
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "instant",
+    });
+  }, [location.pathname]);
   return (
-    <div className="w-full h-screen">
+    <div className="w-full md:h-screen">
       <Outlet />
     </div>
   );

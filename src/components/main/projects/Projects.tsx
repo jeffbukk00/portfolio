@@ -2,8 +2,8 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col p-12 gap-12">
-      <p className="text-sm text-gray-300 tracking-wider mb-2">
+    <div className="flex flex-col sm:p-12 p-6 gap-12">
+      <p className="sm:text-sm text-xs text-gray-300 tracking-wider mb-2">
         제가 만든 프로젝트들입니다. 들여다 보시려면 클릭해주세요.
       </p>
       <Project

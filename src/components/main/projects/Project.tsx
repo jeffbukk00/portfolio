@@ -26,33 +26,33 @@ const Project = ({
         }`}
       >
         <span
-          className={`absolute top-3 left-4 text-main text-xs font-medium py-2 px-4 rounded-full border duration-500 transition-colors ${
+          className={`absolute top-3 left-4 text-main sm:text-xs text-[9px] font-medium sm:py-2 sm:px-4 py-1 px-2 rounded-full border duration-500 transition-colors ${
             isHovered ? "border-main" : "border-gray-300"
           }`}
         >
           {order} 프로젝트
         </span>
         <span
-          className={`absolute top-[50%] translate-y-[-50%] right-6 p-2 rounded-full border duration-500 transition-colors ${
+          className={`absolute top-[50%] translate-y-[-50%] right-6 sm:p-2 p-1 rounded-full border duration-500 transition-colors ${
             isHovered ? "border-main" : "border-gray-300"
           }`}
         >
           <Book
-            classes={`w-6 h-6 duration-500 transition-colors ${
+            classes={`sm:w-6 sm:h-6 w-4 h-4 duration-500 transition-colors ${
               isHovered ? "stroke-main" : "stroke-default"
             }`}
           />
         </span>
         <div className="flex flex-col items-center gap-1">
           <span
-            className={`text-xl font-medium duration-500 transition-colors ${
+            className={`sm:text-xl text-sm font-medium duration-500 transition-colors ${
               isHovered ? "text-main" : "text-default"
             }`}
           >
             {title}
           </span>
           <span
-            className={`text-sm  duration-500 transition-colors ${
+            className={`sm:text-sm text-xs  duration-500 transition-colors ${
               isHovered ? "text-main" : "text-gray-400"
             }`}
           >

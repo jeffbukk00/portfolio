@@ -14,8 +14,3 @@
     @apply box-border;
   }
 }
-
-html,
-body {
-  overflow: hidden;
-}

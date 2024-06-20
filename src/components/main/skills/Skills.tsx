@@ -7,7 +7,7 @@ import VersionControlCol from "./VersionControlCol";
 
 const Skills = () => {
   return (
-    <div className="w-full grid grid-cols-3 px-[5%] py-[8%] gap-y-36">
+    <div className="w-full grid xl:grid-cols-3 semiSm:grid-cols-2 grid-cols-1 px-[5%] py-[8%] gap-y-36">
       <div className="flex justify-center">
         <LanguageCol />
       </div>
